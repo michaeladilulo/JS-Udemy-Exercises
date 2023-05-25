@@ -5,7 +5,7 @@ function average(array) {
 average([1, 2, 3]);
 
 // Password Validator: CHALLENGE: Takes in username and password
-// also: password.password < 8 || password.indexOf(' ') !== -1 || password.indexOf(username)
+// also: password.password < 8 || password.indexOf(' ') !== -1 || password.indexOf(username) !== -1
 function isPasswordValid(username, password) {
   if(password.length < 8 || password.includes(username) || password.includes(' ')) {
      return false;     
