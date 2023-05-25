@@ -1,3 +1,16 @@
+// Password Validator: CHALLENGE: Takes in username and password
+// also: password.password < 8 || password.indexOf(' ') || password.indexOf(username)
+function isPasswordValid(username, password) {
+  if(password.length < 8 || password.includes(username) || password.includes(' ')) {
+     return false;     
+  }
+  return true;
+}
+console.log(isPasswordValid('mike12345', 'mikeisgreat'))
+
+isPasswordValid('mike12345', 'mayaisgreat') // should return true
+// isPasswordValid('maya12345', 'mayaisgreat'); // should return false
+
 // Dice Roll Function
 function diceRoll() {
     let randomDiceRoll = Math.floor(Math.random() * 6) + 1
