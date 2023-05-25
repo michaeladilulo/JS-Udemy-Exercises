@@ -1,5 +1,5 @@
 // Password Validator: CHALLENGE: Takes in username and password
-// also: password.password < 8 || password.indexOf(' ') || password.indexOf(username)
+// also: password.password < 8 || password.indexOf(' ') !== -1 || password.indexOf(username)
 function isPasswordValid(username, password) {
   if(password.length < 8 || password.includes(username) || password.includes(' ')) {
      return false;     
