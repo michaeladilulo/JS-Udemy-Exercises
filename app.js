@@ -1,3 +1,9 @@
+// Average of Numbers
+function average(array) {
+    return array.reduce((total, accumulator) => total + accumulator) / array.length;
+}
+average([1, 2, 3]);
+
 // Password Validator: CHALLENGE: Takes in username and password
 // also: password.password < 8 || password.indexOf(' ') !== -1 || password.indexOf(username)
 function isPasswordValid(username, password) {
