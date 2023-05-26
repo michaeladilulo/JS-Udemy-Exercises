@@ -1,3 +1,16 @@
+// Pangram: Contains every letter of the alphabet
+function isPangramSentence(sentence) {
+    let convertSentenceToLowerCase = sentence.toLowerCase();
+
+    for (let char of 'abcdefghijklmnopqrstuvwxyz') {
+        if(convertSentenceToLowerCase.indexOf(char) === -1) {
+            return false;
+        }
+    }
+    return true;
+}
+isPangramSentence('The five boxing wizards jump quickly')
+
 // Average of Numbers
 function average(array) {
     return array.reduce((total, accumulator) => total + accumulator) / array.length;
