@@ -1,3 +1,24 @@
+// Return random playing card
+function pickRandomPlayingCardValues(array) {
+    const randomCardValue = Math.floor(Math.random() * array.length);
+    return array[randomCardValue]
+}
+
+function getRandomPlayingCard() {
+    const cardValues = [2, 3, 4, 5, 6, 7, 8, 9, 10, 'J', 'Q', 'K', 'A'];
+    const cardSuits = ['Spades', 'Hearts', 'Diamonds', 'Clubs'];
+    const randomCardValue = pickRandomPlayingCardValues(cardValues);
+    const randomCardSuit = pickRandomPlayingCardValues(cardSuits);
+
+    console.log({value: randomCardValue, suit: randomCardSuit})
+
+    return {
+        value: randomCardValue,
+        suit: randomCardSuit
+    }
+}
+getRandomPlayingCard()
+
 // Pangram: Contains every letter of the alphabet
 function isPangramSentence(sentence) {
     let convertSentenceToLowerCase = sentence.toLowerCase();
